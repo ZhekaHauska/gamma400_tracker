@@ -1,0 +1,43 @@
+particle:
+  - gamma
+direction:
+  azimuth: # degrees
+    - 0
+    - 5
+  zenith:
+    - 0
+    - 5
+    - 7
+    - 10
+energy: # MeV
+  - 20
+  - 25
+  - 30
+  - 40
+  - 50
+  - 70
+  - 100
+polarization:
+  x:
+    - 0
+  y:
+    - 0
+  z:
+    - 0
+position: # cm
+  x:
+    - -1
+  y:
+    - 0
+  z:
+    - 0
+number_of_events: 1000000 # per one parameter set (good events)
+batch_size: 100000 # number of events per one tracker run
+number_of_cores: 20
+query_size: 4 # number of jobs in queue simultaneously
+queue: pamela_fast
+walltime: 24 # hours
+update_duration: 5 # minutes, update info every t minutes
+verbose: 2 # 0 - don't messaging, 1 - screen messages, 2 - email, 3 - email and screen
+email: zhekauran@gmail.com # your email
+email_duration: 8 # hours
